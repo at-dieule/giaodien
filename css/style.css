@@ -1,14 +1,13 @@
-
- body {
+body {
     font-family:'Roboto', sans-serif;
-    color: #FFF;
     line-height:1.2em;
     font-size:17px;
     line-height:20px;
 }
 a {
-    color:#181A1C;
+    /*color:#181A1C;*/
     text-decoration: none;
+    cursor: pointer;
 }
 a:hover {
     color: #FECE1A;
@@ -23,36 +22,28 @@ h1 {
 p {
     padding: 10px;
     font-weight: 100;
-    color: #fff;
-}
-.carousel-inner > .item > img,
-          .carousel-inner > .item > a > img {
-              width: 100%;
-              margin: auto;
-          }
-.header{
-
-}
- .navbar {
-      margin-bottom: 0px;
-      border-radius: 0;
-    }
     
-    /* Remove the jumbotron's default bottom margin */ 
-     .jumbotron {
-      padding-top: 0px;
-        padding-bottom: 0px;
-     
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
     }
-   
-    /* Add a gray background color and some padding to the footer */
-    .footer {
-      background-color: #f2f2f2;
-      padding: 25px;}
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0;
+}
+    
+/* Remove the jumbotron's default bottom margin */ 
+ .jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* Add a gray background color and some padding to the footer */
+.footer {
+  background-color: #f2f2f2;
+  padding: 25px;}
 
-/******
-2. Layout
-**********************************************************************/
+/******2. Layout*****************************************/
 .centered {
     margin-left:auto;
     margin-right:auto;
@@ -143,17 +134,6 @@ p {
     background-color:#FECE1A;
     color:#181A1C;
 }
-/*
-2.3 Thumbnails - Predefined bootstrap's thumbnail class.
-**********/
- 
-/*
-2.4 Socail icons
-************/
-
-/*
-3. Sections 
-***************************************************************************/
  .section {
     padding-bottom: 50px;
 }
@@ -191,12 +171,14 @@ p {
     color:#FFF;
 }
 .secondary-section {
-    background:rgba(91, 192, 222, 0.37);
+    /*background:rgba(91, 192, 222, 0.37);*/
+    /*background: rgb(181, 222, 241);*/
+    background: #fff;
 }
 .secondary-section .title {
-    border-bottom: 1px solid #181A1C;
+    color: #009a42;
 }
-.secondary-section h1, .secondary-section .title p {
+.secondary-section .title p {
     color: #181A1C;
 }
 /* Third section use bacground image */
@@ -220,16 +202,10 @@ p {
     padding:0;
 }
 
-
-/* Third section use bacground image */
-
-
-/*
-3.2 Portfolio
-***************************************/
  .single-project {
-    margin-bottom:30px;
+    /*margin-bottom:30px;*/
     background: #fff;
+    margin-top: 20px;
 }
 .single-project img {
     width:100%;
@@ -259,14 +235,14 @@ p {
 }
 .project-title {
     margin-top:15px;
-    margin-bottom: 0px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #333;
 }
 .project-title h3 {
     float:left;
     margin-top:0;
     padding:0;
-    width:80%;
+    /*width:80%;*/
 }
 .project-title .close {
     color: #FECE1A;
@@ -279,6 +255,8 @@ p {
 .project-info {
     font-weight:100;
     padding:10px 0;
+    color: #333333;
+    font-size: 15px;
 }
 .project-info span {
     width: 80px;
@@ -297,11 +275,7 @@ p {
     opacity: 0;
     display: none;
 }
-
- .contact {
-    background: #FECE1A;
-}
-.contact h1, .contact h2, .contact h3, .contact h4, .contact h5, .contact h6, .contact .section .title > p, .contact .social > li > a {
+.contact h1, .contact h3, .contact h4, .contact h5, .contact h6, .contact .section .title > p, .contact .social > li > a {
     color: #181A1C;
 }
 .contact textarea, .contact input[type="text"], .contact input[type="email"] {
@@ -433,18 +407,18 @@ p {
     padding-top: 0;
 }
 .span6.news-pic {
-    width: 40%;
+    width: 30%;
 }
 
 .span6.news-content {
-    width: 55%;
+    width: 65%;
 }
 .nav>li>a:hover {
     text-decoration: none;
     background: none;
 }
 li.filter {
-    background: #5bc0de;
+    background: #099840;
     width: 120px;
     text-align: center;
     margin-bottom: 3px;
@@ -457,7 +431,7 @@ input#email {
 /*
 
 4 Responsible
-********************************************************************/
+*********************************/
  @media (min-width: 1200px) {
     .thumbnail .more {
         margin-left:-41px;
@@ -520,5 +494,48 @@ input#email {
     .jumbotron {
     padding-top: 0px;
     padding-bottom: 0px;
+ }
 }
+.text-news {
+  text-align: justify;
+  color: #333333;
+}
+.on-city {
+    color: #049a41;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.panel-heading a {
+    color: #181a1c;
+    font-size: 14px;
+}
+.panel-heading a:hover {
+    color: #c2c962;
+    text-decoration: none;
+}
+.btn-search {
+    background: #009a42;
+    color: #333333;
+}
+.btn-search:hover {
+    color: #fff;
+    background: #0088cc;
+}
+.newcontent {
+    color: #333333;
+    text-align: justify;
+}
+div#myCarousel {
+    margin-bottom: 0 ;
+}
+.title-news {
+    color: #0088cc;
+}
+.text-feedback {
+    text-align: center;
+    color: #009a42;
+}
+.map {
+    color: #009a42;
+    text-transform: uppercase;
 }
